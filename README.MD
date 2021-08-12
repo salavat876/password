@@ -1,4 +1,4 @@
-#Getting Started
+# Getting Started
 ## First step is : ``npm install`` for install dependencies
 ## This is simply password generator
 ### Console commands
