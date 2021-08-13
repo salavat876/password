@@ -20,4 +20,4 @@
 
 ``node index --length=7 -wn -ws -wbl``
 
-*Command `node` is important, don't remember about her!
+*Command `node` is important, don't forget about her!
