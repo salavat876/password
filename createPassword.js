@@ -1,21 +1,32 @@
-const alphaSmall = 'abcdefghijklmnopqrstuvwxyz'
-const alphaBig = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-const numbers = '0123456789'
-const symbols = '!@#$%^&*_-+='
+const alphaSmall = 'abcdefghijklmnopqrstuvwxyz';
+const alphaBig = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const numbers = '0123456789';
+const symbols = '!@#$%^&*_-+=';
+
+const randomSymbol = (string) => {
+
+    if (typeof string === "string"){
+        return string.charAt(Math.floor(Math.random() * string.length))
+    }
+}
 
 const createPassword = (
     length = 6,
     hasBigLetters = false,
     hasNumbers = false,
     hasSymbols = false,
-    mayBeHasSymbols = false
-
+    mayBeHasSymbols = false,
+    mayBeHasNumbers = false,
+    mayBeHasBigLetters = false
 ) => {
 
     let chars = alphaSmall;
 
+    mayBeHasSymbols ? (chars += randomSymbol(symbols)): '' ;
 
-    mayBeHasSymbols ? (chars += symbols.charAt(Math.floor(Math.random() * symbols.length))): '' ;
+    mayBeHasNumbers ? (chars += randomSymbol(numbers) ): '' ;
+
+    mayBeHasBigLetters ? (chars += randomSymbol(alphaBig) ): '' ;
 
     hasNumbers ? (chars += numbers): '';
 
