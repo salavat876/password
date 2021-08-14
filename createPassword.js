@@ -34,6 +34,7 @@ const createPassword = (
 
     hasBigLetters ? (chars += alphaBig) : '';
 
+
     return generatePassword(length,chars)
 }
 

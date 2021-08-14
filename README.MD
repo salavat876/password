@@ -1,20 +1,25 @@
 # Getting Started
 ## First step is : ``npm install`` for install dependencies
 ## This is simply password generator
-### Console commands
-``-V, --version :          output the version number
+### Console commands 
+-V, --version               output the version number
 
--l, --length <number>:   length of password (default: "6")
+-l, --length <number>       length of password (default: "6")
 
--wn, --numbers:           password with numbers
+-wn, --numbers              password has numbers
 
--ws, --symbols:          password with symbols
+-ws, --symbols              password has symbols
 
--ms, --mayBeHasSymbols:  password  may be had many or hasn`t symbols
+-ms, --mayBeHasSymbols      password has many or hasn`t symbols
 
--wbl, --bigLetters:      password with a big letters
+-wbl, --bigLetters          password has a big letters
 
--h, --help:              display help for command``
+-mwn, --mayBeHasNumbers     password may be had numbers
+
+-mbl, --mayBeHasBigLetters  password may be had big letters
+
+-h, --help                  display help for command
+
 
 ### Example input
 
